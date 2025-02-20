@@ -49,12 +49,12 @@ body {
 /* Contenedor de la imagen y el texto */
 #FirstPic {
   position: relative; /* Necesario para que los elementos hijos con position: absolute se posicionen respecto a este */
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   user-select: none;
   will-change: transform, opacity, filter;
-
+  top:-70px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -92,7 +92,7 @@ body {
 
 /* Estilos del texto principal */
 #ImageText {
-  color: rgba(225, 61, 6, 0.764);
+  color: #e13d06c3;
   text-shadow: 2px 2px 2px black;
   font-size: 32px;
   font-weight: 100;
@@ -111,10 +111,11 @@ body {
 
 
 #FirstSubTextContainer{
-  color: white;
+  color: #ffffff;
   font-family: "Gym2";
   display: flex;
-  margin-top: 5vh;
+  
+  
   width: 100%;
   
 
@@ -127,8 +128,9 @@ body {
 
 #BenefictsContainer{
   display: grid;
-  padding-top: 80px;
+  padding-top: 20px;
   width: 100%;
+  
   grid-template-columns: 1fr 1fr;
 }
 
@@ -136,11 +138,16 @@ body {
   width: 100%;
   justify-content: center;
   display: flex;
+  flex-direction: column;
+  user-select: none;
+  align-items: center;
 
 }
 .CardImage {
-  width: 80%;
-  
+  width: 90%;
+  user-select: none;
+  height: 100%;
+  cursor: pointer;
   object-fit: cover;
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 90%);
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 90%);
@@ -149,3 +156,37 @@ body {
   border-radius: 10px;
 }
 
+.CardText{
+  font-family: "Gym3";
+  color: rgb(193, 193, 193);
+  user-select: none;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.618);
+  padding-top: 20px;
+}
+
+.Line{
+  width: 30%;
+  border-top: 1px solid wheat;
+}
+
+#EquipmentSection{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  color: #E06A01;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Gym2";
+  font-size: 20px;
+  
+  padding-top: 6vh;
+}
+
+#EquipmentText{
+  padding-right: 20px;
+}
+
+.CarruselImg{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
